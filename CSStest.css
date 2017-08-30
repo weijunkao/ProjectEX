@@ -1,0 +1,102 @@
+body{
+    background: url("Blur-Wallpaper-for-Computer.jpg");
+    background-size: cover;
+    text-align: center;
+}
+
+
+
+.col{
+    display: inline-block;
+    width: 210px;
+    height: 310px;
+    background: #fff;
+    margin: 80px 5px;
+    font-family: sans-serif;
+}
+
+.topRow{
+    background: navy;
+    height: 170px;
+    width: 100%;
+    color: #fff;
+    
+}
+
+.topRow>.title{
+    text-align: center;
+
+    text-transform: uppercase;
+    padding: 12px;
+ 
+    
+}
+
+.topRow>.price{
+    text-align: center;
+    margin: 2px;
+}
+.topRow>.price *{
+    display: inline-block;
+
+}
+
+.number{
+    font-size: 2.8em;
+    margin-left: 10px;
+}
+.dollor{
+    margin-top: 
+}
+
+.btn{
+    border: 2px solid #fff;
+    width: 150px;
+    margin: 0px auto;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 0.7em;
+    padding: 5px 0px;
+    margin-top: 10px;
+  
+}
+
+.dollar{
+    position: relative;
+    top: -20px;
+}
+
+i{
+    color: rgba(169, 169, 169, 0.88);
+    width: 15px;
+        
+}
+
+
+.bottomRow{
+    width: 130px;
+    text-align: left;
+    margin: 20px 15px 5px 45px;
+    font-size: 0.6em;
+    color: gray
+}
+.messages{
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.35); 
+    margin: 5px;
+}
+.data{
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.35); 
+    margin: 5px;
+    margin: 5px;
+}
+.users{
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.35); 
+    margin: 5px;
+    margin: 5px;
+}
+.freeday{
+    margin: 5px;
+}
