@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Untitled Document</title>
+    <link rel="stylesheet" href="JQuerytest.css">
     <script src="jquery-3.2.1.js"></script>
 
 </head>
@@ -10,7 +11,10 @@
 
 <table border="1">
   <tr>
-    <td colspan="2">一起看看小王子留給我們與人生的六個關係練習</td>
+    <td colspan="2">一起看看小王子留給我們與人生的六個關係練習
+    
+   
+    </td>
   </tr>
   <tr>
     <td rowspan="2">與自己的關係</td>
@@ -33,22 +37,44 @@
   <tr>
     <td>分離的時候，學會道別</td>
   </tr>
+
+
 </table>
+
+
+<div class="playground">
+  <input type="text"></input>
+  <div class="hint">心得輸入區</div>
+</div>
+
 
 <script>
     $(document).ready(function(){
        $("td").mouseover(function(){
            $(this).css("background", "lightblue");
+    
        });
-        $("td").mouseout(function(){
+      
+          $("td").mouseout(function(){
            $(this).css("background", "white");
        });
         $("[rowspan='2']").click(function(){
             $(this).css("background", "lightgreen");
-        });
+        });  
         
+         $("input").mouseover(function(){
+    $(".hint").css("display","block")
+  });
+    $("input").mouseout(function(){
+    $(".hint").css("display","none")
+  });
         
-    });
+    
+  });  
+     
+    
+                       
+
     
     </script>
 
