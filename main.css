@@ -1,0 +1,39 @@
+body{
+background: rgba(252, 252, 235, 0.73);
+}
+
+
+table{
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td{
+    width: 300px;
+}
+
+
+.csspt{
+    margin-left: 60px;
+    margin-right: auto;
+}
+
+
+
+
+.RWD{
+    background: rgba(230, 118, 183, 0.94);
+    width: 240px;
+    text-align: center;
+    font-size: 3em;
+    font-family: serif;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.bottom{
+    text-align: center;
+}
