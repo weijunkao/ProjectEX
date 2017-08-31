@@ -42,11 +42,17 @@
 </table>
 
 
-<div class="playground">
-  <input type="text"></input>
-  <div class="hint">心得輸入區</div>
-</div>
+<div id="password">
+	心得輸入區：<input type="text"/>
+	<p>心得字數：<span class="tips" level="0"></span><span class="tips" level="1"></span><span class="tips" level="2"></span><span class="tips" level="3"></span></p>
 
+ <div class="hint">  
+  請輸入50字心得</div>
+
+ </div>
+
+
+ 
 
 <script>
     $(document).ready(function(){
@@ -62,12 +68,56 @@
             $(this).css("background", "lightgreen");
         });  
         
-         $("input").mouseover(function(){
-    $(".hint").css("display","block")
+    $("#password").mouseover(function(){
+    $(".hint").css("display","inline-block")
   });
-    $("input").mouseout(function(){
+    $("#password").mouseout(function(){
     $(".hint").css("display","none")
   });
+     
+  
+var tipColor=['red','yellow','orange','green'];
+  
+  function matchLevel(password){
+    if(password.length===0){
+        return -1;
+    }
+	else if(password.length>=1&&password.length<12){
+		return 0;
+	}
+	else if(password.length>=12&&password.length<24){
+		return 1;
+	}
+	else if(password.length>=24&&password.length<36){
+		return 2;
+	}
+	else{
+		return 3;
+	}
+  }
+
+  $("#password>input").keyup(function(){
+    var pass = $(this).val();
+    var level = matchLevel(pass);
+
+    
+  for(var i=0;i<4;i=i+1){
+    if(level>=i){
+      $("[level='"+i+"']").css("background",tipColor[i]);
+    }
+        
+    else{
+       $("[level='"+i+"']").css("background","");
+     }         
+  }  
+    
+    
+
+    
+      
+  });
+        
+        
         
     
   });  
